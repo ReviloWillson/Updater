@@ -2,6 +2,7 @@
 
 #Updater  Simple Linux-only update script
 #Copyright (C) 2021  Oliver Willson
+#Full copyright info at: https://github.com/ReviloWillson/Updater/blob/main/LICENSE
 
 import os, sys
 

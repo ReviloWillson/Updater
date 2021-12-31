@@ -7,3 +7,4 @@
 
 ## File Usage
 #### This program uses several dependencies from Sunfounder's Raspad3 auto rotator install script. All other code is written by CJO AUTOMATED.
+###### These can be found in the file inst_dependencies.

@@ -53,7 +53,7 @@ def do(msg="", cmd=""):
                       (msg, status, result))
         return False
 
-#Allow yourself DevAccess by adding or USER == '<usertolist>': on the end of the line below.
+#Allow yourself DevAccess by adding: or USER == '<usertolist>': on the end of the line below.
 
 if USER == 'revilo':
     print('Detected Dev User:%s' % (USER))

@@ -1,3 +1,5 @@
+#If you are using this on a Rasperry Pi OS based system, run the command sudo pip install popen. Install pip if required with command sudo install pip. 
+
 import os, sys
 
 USER = os.environ.get('SUDO_USER')

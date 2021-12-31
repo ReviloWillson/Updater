@@ -1,4 +1,3 @@
-#This is not the newest version!
 import os, sys
 
 USER = os.environ.get('SUDO_USER')
@@ -47,6 +46,29 @@ def do(msg="", cmd=""):
         errors.append("%s error:\n  Status:%s\n  Error:%s" %
                       (msg, status, result))
         return False
+
+#Allow yourself DevAccess by adding or USER == '<usertolist>': on the end of the line below.
+
+if USER == 'revilo':
+    print('Detected Dev User:%s' % (USER))
+    devq = input('Activate Dev Access and view source code? (Y/n)\n')
+    if devq == 'Y' or devq == 'y':
+        print('Dev access Enabled. Code will be displayed below.\n\n\n\n')
+        try:
+            fileOutput = open('Updater.py', 'r')
+            data = fileOutput.read()
+            fileOutput.close()
+            print(data)
+            quit()
+        except OSError:
+            print('[  %s  ]' % (USER))
+            print('       %s' % colored("Fail!", "red"))
+            quit()
+        
+    else:
+        print('Dev access Aborted.') 
+
+print('Updater \nCopyright (C) 2021  Oliver Willson')
 
 conf = input('Run Updates? (Y/n)\n')
 

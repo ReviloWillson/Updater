@@ -41,8 +41,8 @@ def do(msg="", cmd=""):
 finder = ModuleFinder()
 finder.run_script('Updater.py')
 
-print('Checking \'Updater.py\' - May take a few moments...\n=========================================================')
-print('%s:' % colored("Lodaed Modules", "green"))
+print('%s.\n=========================================================' % colored("Checking \'Updater.py\' - May take a few moments..", "blue"))
+print('%s:' % colored("Loaded Modules", "green"))
 for name, mod in finder.modules.items():
 	print('%s: ' % name, end='')
 	print(','.join(list(mod.globalnames.keys())[:3]))

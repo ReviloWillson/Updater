@@ -5,7 +5,7 @@
 #### Free and open-source update script for Linux. Only for use with:
 ### sudo python3 Updater.py
 
-###### If the update script does not work, type:
+###### If the update script does not work, install the Updater Module Checker file and type:
 ##### python3 'Updater Module Checker.py'
 ###### into the terminal and run:
 ##### sudo pip install 'modulename'

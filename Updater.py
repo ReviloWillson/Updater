@@ -1,7 +1,7 @@
 #If you are using this on a Rasperry Pi OS based system, run the command sudo pip install popen. Install pip if required with command sudo install pip. 
 
 #Updater  Simple Linux-only update script
-#Copyright (C) 2021  Oliver Willson
+#Copyright (C) 2021  CJO Automated
 #Full copyright info at: https://github.com/ReviloWillson/Updater/blob/main/LICENSE
 
 import os, sys
@@ -53,7 +53,7 @@ def do(msg="", cmd=""):
                       (msg, status, result))
         return False
 
-print('Updater \nCopyright (C) 2021  Oliver Willson')
+print('Updater \nCopyright (C) 2021  OJO Automated')
 
 #Allow yourself DevAccess by adding: or USER == '<usertolist>': on the end of the line below.
 

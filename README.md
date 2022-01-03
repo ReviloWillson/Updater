@@ -9,7 +9,7 @@
 ##### python3 'Updater Module Checker.py'
 ###### into the terminal and run:
 ##### sudo pip install 'modulename'
-###### until all missing modules have been intalled. if the Update script still does not work, please notify me.
+###### until all missing modules have been intalled. if the Update script still does not work, please notify us.
 
 ## File Usage
 #### This program uses several dependencies from Sunfounder's Raspad3 auto rotator install script. All other code is written by CJO AUTOMATED.

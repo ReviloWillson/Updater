@@ -53,7 +53,7 @@ def do(msg="", cmd=""):
                       (msg, status, result))
         return False
 
-print('Updater \nCopyright (C) 2021  OJO Automated')
+print('Updater \nCopyright (C) 2021  CJO Automated')
 
 #Allow yourself DevAccess by adding: or USER == '<usertolist>': on the end of the line below.
 

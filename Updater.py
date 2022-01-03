@@ -53,9 +53,11 @@ def do(msg="", cmd=""):
                       (msg, status, result))
         return False
 
+print('Updater \nCopyright (C) 2021  Oliver Willson')
+
 #Allow yourself DevAccess by adding: or USER == '<usertolist>': on the end of the line below.
 
-if USER == 'revilo':
+if USER == 'revilo' or USER == 'pi':
     print('Detected Dev User:%s' % (USER))
     devq = input('Activate Dev Access and view source code? (Y/n)\n')
     if devq == 'Y' or devq == 'y':
@@ -67,14 +69,24 @@ if USER == 'revilo':
             print(data)
             quit()
         except OSError:
-            print('[  %s  ]' % (USER))
-            print('       %s' % colored("Fail!", "red"))
-            quit()
+            print('[  %s  ]:' % (USER))
+            print('         %s' % colored("Fail!", "red"))
+            print('             %s' % colored("Error: File not found!", "red"))
+            retry = input('Retry without error handler? (Y/n)')
+            retry = retry.lower()
+            if retry == 'y':
+                fileOutput = open('Updater.py', 'r')
+                data = fileOutput.read()
+                fileOutput.close()
+                print(data)
+                quit()
+            else:
+                quit()
         
     else:
         print('Dev access Aborted.') 
 
-print('Updater \nCopyright (C) 2021  Oliver Willson')
+
 
 conf = input('Run Updates? (Y/n)\n')
 

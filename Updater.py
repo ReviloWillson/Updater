@@ -67,6 +67,13 @@ if USER == 'revilo' or USER == 'pi':
             data = fileOutput.read()
             fileOutput.close()
             print(data)
+            print('\n')
+            print('-'*50)
+            print('\n')
+            do(msg='Update APT Package Manager',
+                cmd='run_command("apt update")')
+            do(msg='Update Computer',
+                cmd='run_command("sudo apt update && sudo apt upgrade")')
             quit()
         except OSError:
             print('[  %s  ]:' % (USER))

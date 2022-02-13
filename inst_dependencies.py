@@ -1,4 +1,4 @@
-#Dependencies used in Update script.From Sunfounder's install script.
+#Dependencies used in Update script. From Sunfounder's install script.
 
 def errors(self):
         return self._errors
